@@ -58,39 +58,39 @@ async function selectCategory() {
 }
 
 async function geolocation() {
-    console.log(chalk.greenBright("Geolocation: \n"));
-    console.log(chalk.redBright("Latitude: " + lat));
-    console.log(chalk.redBright("Longditude: " + lon));
-    console.log(chalk.redBright("Continent: " + continent));
-    console.log(chalk.redBright("Country: " + country));
-    console.log(chalk.redBright("Country code: " + countryCode));
-    console.log(chalk.redBright("District: " + district));
-    console.log(chalk.redBright("Region: " + regionName));
-    console.log(chalk.redBright("City: " + city));
-    console.log(chalk.redBright("ZIP Code: " + zip));
-    console.log(chalk.redBright("Currency: " + currency));
+    console.log(chalk.green("Geolocation: \n"));
+    console.log(chalk.red("Latitude: " + lat));
+    console.log(chalk.red("Longditude: " + lon));
+    console.log(chalk.red("Continent: " + continent));
+    console.log(chalk.red("Country: " + country));
+    console.log(chalk.red("Country code: " + countryCode));
+    console.log(chalk.red("District: " + district));
+    console.log(chalk.red("Region: " + regionName));
+    console.log(chalk.red("City: " + city));
+    console.log(chalk.red("ZIP Code: " + zip));
+    console.log(chalk.red("Currency: " + currency));
 }
 
 async function timeInformation() {
-    console.log(chalk.greenBright("Time information: \n"));
-    console.log(chalk.redBright("Timezone: " + timezone));
-    console.log(chalk.redBright("UTC DST offset (seconds): " + offset));
+    console.log(chalk.green("Time information: \n"));
+    console.log(chalk.red("Timezone: " + timezone));
+    console.log(chalk.red("UTC DST offset (seconds): " + offset));
 }
 
 async function deviceInformation() {
-    console.log(chalk.greenBright("Device information: \n"));
-    console.log(chalk.redBright("Mobile device: " + mobile));
-    console.log(chalk.redBright("Proxy: " + proxy));
-    console.log(chalk.redBright("Reverse: " + reverse));
-    console.log(chalk.redBright("Hosting: " + hosting));
+    console.log(chalk.green("Device information: \n"));
+    console.log(chalk.red("Mobile device: " + mobile));
+    console.log(chalk.red("Proxy: " + proxy));
+    console.log(chalk.red("Reverse: " + reverse));
+    console.log(chalk.red("Hosting: " + hosting));
 }
 
 async function ispInformation() {
-    console.log(chalk.redBright("IP address: " + query));
-    console.log(chalk.greenBright("IP information: \n"));
-    console.log(chalk.redBright("ISP name: " + isp));
-    console.log(chalk.redBright("Organization: " + org));
-    console.log(chalk.redBright("AS name: " + asname));
+    console.log(chalk.red("IP address: " + query));
+    console.log(chalk.green("IP information: \n"));
+    console.log(chalk.red("ISP name: " + isp));
+    console.log(chalk.red("Organization: " + org));
+    console.log(chalk.red("AS name: " + asname));
 }
 
 await selectCategory();

@@ -9,6 +9,11 @@ if (process.argv[2]) {
 
     var IP = process.argv[2];
 }
+else
+{
+    console.log(chalk.bgBlack("Required argument is missing!"));
+    process.exit(1);
+}
 
 const res = await fetch(
     `http://ip-api.com/json/${IP}?fields=66846719`

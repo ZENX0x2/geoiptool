@@ -48,6 +48,7 @@ async function selectCategory() {
         type: "list",
         message: "Select a category\n",
         choices: [
+            "General",
             "Geolocation",
             "Time information",
             "Device information",
@@ -55,6 +56,9 @@ async function selectCategory() {
         ],
     }).then((answers) => {
         switch (answers.categories) {
+            case "General":
+                quickChoice();
+                break;
             case "Geolocation":
                 geolocation();
                 break;
@@ -113,6 +117,15 @@ async function ispInformation() {
     console.log(chalk.red("Organization: " + org));
     console.log(chalk.red("AS: " + as));
     console.log(chalk.red("AS name: " + asname));
+}
+
+async function quickChoice()
+{
+    console.log(chalk.red("Country: " + country));
+    console.log(chalk.red("City: " + city));
+    console.log(chalk.red("Timezone: " + timezone));
+    console.log(chalk.red("Currency: " + currency));
+    console.log(chalk.red("ISP name: " + isp));
 }
 
 await statusMessage();
